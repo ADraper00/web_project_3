@@ -1,39 +1,34 @@
-@import url(./__list/header__list.css);
-@import url(./__lang/header__lang.css);
-@import url(./__list-item/header__list-item.css);
-@import url(./__lang/_active/header__lang_active.css);
+@import url(./__lang-link/header__lang-link.css);
+@import url(./__lang-link/_active/header__lang-link_active.css);
+@import url(./__lang-container/header__lang-container.css);
 
 .header {
   display: flex;
-  align-items: center;
+  margin: 0 auto;
+  align-items: flex-start;
   justify-content: space-between;
-  padding-top: 33px;
-  padding-bottom: 0;
-  padding-right: 128px;
-  padding-left: 128px;
-  max-width: 1184px;
-  margin: auto;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .header {
-    padding-right: 48px;
-    padding-left: 48px;
-    padding-top: 36px;
+    min-width: 984px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .header {
-    padding-right: 24px;
-    padding-left: 24px;
+    min-width: 928px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 768px) {
   .header {
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-top: 18px;
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    max-width: 288px;
   }
 }

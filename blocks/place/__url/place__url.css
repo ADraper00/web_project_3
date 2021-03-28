@@ -1,13 +1,13 @@
 .place__url {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 1.667;
-  color: #FFF;
-  margin: 0;
+  line-height: 22px;
+  margin-top: 12px;
+  color: #FFFFFF;
 }
-  
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 320px) and (max-width: 767px){
   .place__url {
-    font-size: calc(2.34vw);
+      margin-left: 16px;
   }
 }

@@ -3,16 +3,5 @@
 @import url(./__link/cover__link.css);
 
 .cover {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: calc(50% - 592px);
-  padding-right: calc(50% - 592px);
-  position: relative;
-}
-
-@media screen and (max-width: 1024px) {
-  .cover {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  margin: 0 auto;
 }
