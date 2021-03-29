@@ -1,11 +1,12 @@
 .place__url-heading {
-  color: #ffffff;
+  color: #aaaaaa;
   font-size: 12px;
-  font-family: "Inter Regular", sans-serif;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0.2em;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  font-style: normal;
 }
 
 @media screen and (min-width: 1280px) {
