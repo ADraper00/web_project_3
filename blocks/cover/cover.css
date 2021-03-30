@@ -1,7 +1,17 @@
-@import url(./__title/cover__title.css);
 @import url(./__subtitle/cover__subtitle.css);
+@import url(./__title/cover__title.css);
+@import url(./__text/cover__text.css);
 @import url(./__link/cover__link.css);
 
 .cover {
-  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 48px 0;
+}
+
+@media (max-width: 1279px) {
+  .cover {
+    padding: 0;
+  }
 }

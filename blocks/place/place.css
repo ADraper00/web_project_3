@@ -7,65 +7,31 @@
 @import url(./__description/place__description.css);
 
 .place {
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "title website"
-    "image text";
+  padding-bottom: 80px;
+  grid-gap: 48px 40px;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 1280px) {
+@media (max-width: 1279px) {
   .place {
-    max-width: 984px;
-    margin-bottom: 80px;
-    grid-gap: 48px 20px;
-  }
-
-  .place:last-of-type {
-    margin-bottom: 92px;
+    grid-gap: 48px 32px;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media (max-width: 1023px) {
   .place {
-    max-width: 928px;
-    margin-bottom: 80px;
-    grid-gap: 48px 20px;
-  }
-
-  .place:last-of-type {
-    margin-bottom: 92px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .place {
-    max-width: 720px;
-    margin-bottom: 72px;
     grid-gap: 48px 28px;
-  }
+    padding-bottom: 72px;
 
-  .place:last-of-type {
-    margin-bottom: 89px;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 675px) {
   .place {
-    max-width: 320px;
-    margin-bottom: 48px;
-    grid-template-areas:
-      "title"
-      "website"
-      "image"
-      "text";
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    padding-bottom: 49px;
     grid-gap: 30px;
-  }
-
-  .place:last-of-type {
-    margin-bottom: 64px;
   }
 }
